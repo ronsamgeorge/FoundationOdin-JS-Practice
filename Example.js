@@ -3,4 +3,4 @@ function add7(numberValue){
     return sum;
 }
 
-add7();
+console.log(add7(10));
