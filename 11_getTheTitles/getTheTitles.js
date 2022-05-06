@@ -4,7 +4,8 @@ const getTheTitles = function() {
     console.log(array.length);
 
     const titles = array.reduce((title,book)=>{
-        title.push(book.title);
+        title.push(book.title);                        //return title.push(book.title); doesnt work because the return value of push is the length of the array
+                                                       // and hence it will show that .push is not a function on title; 
         return title
     },[]);
 
